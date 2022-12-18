@@ -1,0 +1,575 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Pacifico', cursive;
+}
+
+body{
+    margin: 0;
+    color: #4d1983;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #4d1983;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*------DEBUT-ScrollBar et Selection------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right,
+            #21083B,
+            #A35FEB,
+            #4586FF,
+            #22D9EE,
+            #4586FF,
+            #A35FEB,
+            #21083B);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right,
+            #11041f,
+            #6a29af,
+            #1e61dd,
+            #18a1b1,
+            #1e61dd,
+            #6a29af,
+            #11041f);
+}
+
+::selection {
+    color: white;
+    background: #A35FEB;
+}
+
+/*------FIN-ScrollBar et Selection------*/
+
+/* ---------- Header DEBUT ---------- */
+
+/* background-image: radial-gradient(#21083B,
+    #A35FEB,
+    #4586FF,
+    #22D9EE,
+    #4586FF,
+    #A35FEB,
+    #21083B); 
+    
+    background-image: linear-gradient(to bottom,
+        #21083B,
+        #A35FEB,
+        #4586FF,
+        #22D9EE,
+        #4586FF,
+        #A35FEB,
+        #21083B);*/
+
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #21083B;
+}
+
+.navHeader a {
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+
+.navContactHeader {
+    justify-content: space-around;
+}
+
+.navContactHeader a {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.imgHeader {
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(#21083B,
+            #A35FEB,
+            #4586FF,
+            #22D9EE,
+            #4586FF,
+            #A35FEB,
+            #21083B);
+}
+
+.navFixTop {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.navFixTop a {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navFixTop a:hover {
+    text-decoration: underline;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right,
+    #21083B,
+    #A35FEB,
+    #4586FF,
+    #22D9EE,
+    #4586FF,
+    #A35FEB,
+    #21083B);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navRespon {
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+
+    .imgHeader img {
+        width: 240px;
+        height: 200px;
+    }
+
+    .navPlanSite {
+        display: none;
+    }
+
+    .navRespon {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .navContactHeader a {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .navFixTop a {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .imgHeader img {
+        width: 200px;
+        height: 166px;
+    }
+
+}
+
+/* ---------- Header FIN ---------- */
+
+/* ---------- Main DEBUT ---------- */
+
+main {
+    background-image: radial-gradient(
+        #22D9EE,
+        #4586FF,
+        #A35FEB,
+        #21083B);
+}
+
+#bodyMainSection {
+    margin: 0px 200px;
+    background-color: aliceblue;
+}
+
+.mainSection {
+    padding: 50px;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleSection h2 {
+    font-size: 50px;
+    font-family: 'Yellowtail', cursive;
+    background: linear-gradient(45deg,
+            #21083B,
+            #A35FEB,
+            #4586FF,
+            #22D9EE,
+            #4586FF,
+            #A35FEB,
+            #21083B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.titleSection h3 {
+    font-size: 30px;
+    margin: 0;
+    text-shadow: -3px 2px 3px#A35FEB;
+}
+
+.sectionBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1220px) {
+
+    #bodyMainSection{
+        margin: 0px 100px;
+    }
+
+    .titleSection h2 {
+        font-size: 40px;
+    }
+
+    .titleSection h3 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #bodyMainSection {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .mainSection {
+        padding: 20px;
+    }
+
+    .titleSection h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* ---------- Main FIN ---------- */
+
+/* ---------- Section A propo DEBUT ---------- */
+
+.aboutInfoBox{
+    max-width: 300px;
+}
+
+.aboutInfoBox p {
+    text-align: justify;
+}
+
+/* ---------- Section A propo FIN ---------- */
+
+/* ---------- Section Competence DEBUT ---------- */
+
+.allCompetBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoCompet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.competPersoBox {
+    max-width: 220px;
+    margin: 20px 0px;
+}
+
+.competPersoBox h4 {
+    margin: 0px 0px 10px 0px;
+}
+
+.competPersoBox p{
+    margin: 0;
+}
+
+.competTechBox {
+    min-width: 300px;
+    background: linear-gradient(45deg,
+        #21083B,
+        #A35FEB,
+        #4586FF,
+        #22D9EE,
+        #4586FF,
+        #A35FEB,
+        #21083B);
+    border-radius: 10px;
+    padding: 4px;
+    background-size: 400% 400%;
+    animation: gradientAnim 10s ease infinite;
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.competTechBox div{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.competTechBox li {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 620px) {
+
+    .competTechBox {
+        min-width: 236px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .competTechBox {
+        min-width: auto;
+    }
+
+}
+
+/* ---------- Section Competence FIN ---------- */
+
+/* ---------- Section Experience DEBUT ---------- */
+
+.experAll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.experBox {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    min-width: 430px;
+}
+
+.experBox h3 {
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #4d1983;
+}
+
+.experBox div {
+    width: 80%;
+    height: 5px;
+    margin-top: 5px;
+    background: linear-gradient(to right,
+            #21083B,
+            #A35FEB,
+            #4586FF,
+            #22D9EE,
+            #4586FF,
+            #A35FEB,
+            #21083B);
+}
+
+.experBox h4 {
+    margin: 5px;
+}
+
+.experBox a {
+    transition: all 0.2s ease-in-out;
+}
+
+.experBox a:hover {
+    color: red;
+    font-size: 20px;
+}
+
+.experBox p {
+    text-align: justify;
+    margin: 0;
+    padding: 15px;
+    color: #4d1983;
+}
+
+@media screen and (max-width: 1220px) {
+
+    .experBox {
+        text-align: center;
+        max-width: auto;
+        min-width: auto;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .experBox p {
+        text-align: center;
+    }
+}
+
+/* ---------- Section Experience FIN ---------- */
+
+/* ---------- Section Contact DEBUT ---------- */
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    text-align: center;
+}
+
+.contactBox h3 {
+    margin: 30px 0px 10px 0px;
+}
+
+.contactBox h4 {
+    margin: 4px;
+    font-weight: bold;
+    text-shadow: -3px 2px 3px#A35FEB;
+}
+
+@media screen and (max-width: 300px) {
+
+    .contactBox {
+        min-width: 200px;
+    }
+
+}
+
+/* ---------- Section Contact FIN ---------- */
+
+/* ---------- Footer DEBUT ---------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #21083B;
+}
+
+.imgFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFooter img {
+    width: 200px
+}
+
+.navFooter {
+    display: flex;
+    gap: 70px;
+}
+
+.navPlanSiteFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.navPlanSiteFooter h5 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.navPlanSiteFooter a {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.navPlanSiteFooter a:hover {
+    text-decoration: underline;
+    border-radius: 20px;
+}
+
+.navReseauxLocal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 530px) {
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .navFooter {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .navFooterAll {
+        justify-content: center;
+    }
+
+    .navPlanSiteFooter {
+        text-align: center;
+    }
+
+}
+
+/* ---------- Footer FIN ---------- */
