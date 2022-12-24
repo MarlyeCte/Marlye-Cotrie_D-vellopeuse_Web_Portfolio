@@ -389,6 +389,10 @@ main {
 
 /* ---------- Section Experience DEBUT ---------- */
 
+.sectionBoxExperience {
+    margin-bottom: 50px;
+}
+
 .experAll {
     display: flex;
     flex-wrap: wrap;
@@ -464,6 +468,65 @@ main {
 }
 
 /* ---------- Section Experience FIN ---------- */
+
+/* ---------- Section Cv DEBUT ---------- */
+
+.btnCv {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCv a {
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(115deg,
+            #21083B,
+            #A35FEB,
+            #4586FF,
+            #22D9EE,
+            #4586FF,
+            #A35FEB,
+            #21083B);
+    transition: all 0.1s;
+}
+
+.btnCv button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    color: #4d1983;
+    font-family: cursive;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btnCv a:hover {
+    transform: scale(1.1);
+    background-size: 200% 100%;
+    animation: gradientAnimCv 4s linear infinite;
+}
+
+@keyframes gradientAnimCv {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btnCv button:hover {
+    text-shadow: -3px 2px 3px #A35FEB;
+    text-decoration: underline;
+}
+
+/* ---------- Section Cv FIN ---------- */
 
 /* ---------- Section Contact DEBUT ---------- */
 
