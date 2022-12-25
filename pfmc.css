@@ -373,6 +373,22 @@ main {
     font-weight: bold;
 }
 
+@media screen and (max-width: 360px) {
+
+    .competTechBox div {
+        padding: 10px 30px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .competTechBox div {
+        padding: 10px 20px;
+    }
+
+}
+
 /* ---------- Section Competence FIN ---------- */
 
 /* ---------- Section Experience DEBUT ---------- */
