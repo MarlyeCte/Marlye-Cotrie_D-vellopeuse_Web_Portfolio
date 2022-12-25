@@ -329,8 +329,9 @@ main {
 }
 
 .competTechBox {
-    min-width: 300px;
-    background: linear-gradient(45deg,
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(115deg,
         #21083B,
         #A35FEB,
         #4586FF,
@@ -338,8 +339,6 @@ main {
         #4586FF,
         #A35FEB,
         #21083B);
-    border-radius: 10px;
-    padding: 4px;
     background-size: 400% 400%;
     animation: gradientAnim 10s ease infinite;
 }
@@ -359,16 +358,19 @@ main {
 }
 
 .competTechBox div{
-    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    color: #4d1983;
     background-color: white;
-    border-radius: 10px;
 }
 
 .competTechBox li {
     font-weight: bold;
 }
 
-@media screen and (max-width: 620px) {
+/* @media screen and (max-width: 620px) {
 
     .competTechBox {
         min-width: 236px;
@@ -382,7 +384,7 @@ main {
         min-width: auto;
     }
 
-}
+} */
 
 /* ---------- Section Competence FIN ---------- */
 
