@@ -291,6 +291,7 @@ main {
 
 .aboutInfoBox{
     max-width: 300px;
+    font-size: 18px;
 }
 
 .aboutInfoBox p {
@@ -313,11 +314,13 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 30px;
 }
 
 .competPersoBox {
-    max-width: 220px;
-    margin: 20px 0px;
+    font-size: 18px;
+    padding: 10px 10px;
+    max-width: 250px;
 }
 
 .competPersoBox h4 {
@@ -391,6 +394,7 @@ main {
     flex-direction: column;
     max-width: 430px;
     min-width: 430px;
+    font-size: 18px;
 }
 
 .experBox h3 {
@@ -422,11 +426,15 @@ main {
 
 .experBox a {
     transition: all 0.2s ease-in-out;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
 }
 
 .experBox a:hover {
-    color: red;
+    color: #4586FF;
+    text-shadow: -3px 2px 3px #22D9EE;
     font-size: 20px;
+    text-decoration: underline;
 }
 
 .experBox p {
@@ -483,6 +491,8 @@ main {
     color: #4d1983;
     background-color: white;
     cursor: pointer;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
 }
 
 .btnCv a:hover {
@@ -519,6 +529,7 @@ main {
     flex-direction: column;
     min-width: 250px;
     text-align: center;
+    font-size: 18px;
 }
 
 .contactBox h3 {
@@ -528,7 +539,19 @@ main {
 .contactBox h4 {
     margin: 4px;
     font-weight: bold;
-    text-shadow: -3px 2px 3px#A35FEB;
+}
+
+.contactBox a {
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+}
+
+.contactBox a:hover {
+    color: #4586FF;
+    text-shadow: -3px 2px 3px #22D9EE;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 300px) {
