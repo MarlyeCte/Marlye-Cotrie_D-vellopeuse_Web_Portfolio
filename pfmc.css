@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    font-family: cursive;
 }
 
 body{
@@ -8,16 +7,6 @@ body{
     color: #4d1983;
     text-align: center;
 }
-
-/* h2,
-h3,
-h4,
-h5,
-a,
-li,
-p {
-    
-} */
 
 a {
     text-decoration: none;
@@ -506,7 +495,6 @@ main {
     padding: 10px 50px;
     border: none;
     color: #4d1983;
-    font-family: cursive;
     background-color: white;
     cursor: pointer;
 }
