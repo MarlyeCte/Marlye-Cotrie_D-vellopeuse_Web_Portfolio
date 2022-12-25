@@ -1,12 +1,21 @@
 html {
     scroll-behavior: smooth;
-    font-family:  cursive;
 }
 
 body{
     margin: 0;
     color: #4d1983;
     text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+a,
+li,
+p {
+    font-family: cursive;
 }
 
 a {
