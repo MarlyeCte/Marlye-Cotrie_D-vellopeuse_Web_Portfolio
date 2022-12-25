@@ -358,7 +358,7 @@ main {
 }
 
 .competTechBox div{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px 50px;
     border: none;
@@ -369,22 +369,6 @@ main {
 .competTechBox li {
     font-weight: bold;
 }
-
-/* @media screen and (max-width: 620px) {
-
-    .competTechBox {
-        min-width: 236px;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-
-    .competTechBox {
-        min-width: auto;
-    }
-
-} */
 
 /* ---------- Section Competence FIN ---------- */
 
