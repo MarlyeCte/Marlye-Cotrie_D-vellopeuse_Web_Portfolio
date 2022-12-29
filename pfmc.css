@@ -468,13 +468,17 @@ main {
         min-width: auto;
     }
 
-}
-
-@media screen and (max-width: 300px) {
     .experBox p {
         text-align: center;
     }
+
 }
+
+/* @media screen and (max-width: 300px) {
+    .experBox p {
+        text-align: center;
+    }
+} */
 
 /* ---------- Section Experience FIN ---------- */
 
