@@ -6,6 +6,7 @@ body{
     margin: 0;
     color: #4d1983;
     text-align: center;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 a {
@@ -57,82 +58,34 @@ li {
 
 /*------FIN-ScrollBar et Selection------*/
 
-/* ---------- Header DEBUT ---------- */
-
-/* background-image: radial-gradient(#21083B,
-    #A35FEB,
-    #4586FF,
-    #22D9EE,
-    #4586FF,
-    #A35FEB,
-    #21083B); 
-    
-    background-image: linear-gradient(to bottom,
-        #21083B,
-        #A35FEB,
-        #4586FF,
-        #22D9EE,
-        #4586FF,
-        #A35FEB,
-        #21083B);*/
+/* -------- HEADER NAV ALL DEBUT -------- */
 
 .navHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #21083B;
 }
 
 .navHeader a {
-    color: white;
+    color: #fff;
     font-weight: bold;
-    transition: all 0.5s linear;
+    text-shadow: 3px 2px 4px #6f4899;
 }
 
-.navContactHeader {
-    justify-content: space-around;
+.navAnim a {
+    transition: all 0.2s ease-in-out;
 }
 
-.navContactHeader a {
-    padding: 15px;
-    font-size: 16px;
-}
-
-.imgHeader {
-    display: flex;
-    justify-content: center;
-    background-image: radial-gradient(#21083B,
+.navAnim a:hover {
+    text-shadow: 2px 2px 2px #21083b;
+    text-decoration: underline;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right,
+            #21083B,
             #A35FEB,
             #4586FF,
             #22D9EE,
             #4586FF,
             #A35FEB,
             #21083B);
-}
-
-.navFixTop {
-    width: 100%;
-    position: sticky;
-    top: 0px;
-}
-
-.navFixTop a {
-    padding: 20px;
-    font-size: 20px;
-}
-
-.navFixTop a:hover {
-    text-decoration: underline;
-    border-radius: 20px;
-    background-image: linear-gradient(to bottom right,
-    #21083B,
-    #A35FEB,
-    #4586FF,
-    #22D9EE,
-    #4586FF,
-    #A35FEB,
-    #21083B);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
@@ -151,8 +104,118 @@ li {
     }
 }
 
+/* -------- HEADER NAV ALL FIN -------- */
+
+/* -------- HEADER NAV / CONTACT DEBUT -------- */
+
+.navContactHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navContactHeader a {
+    padding: 15px;
+}
+
+/* -------- HEADER NAV / CONTACT FIN -------- */
+
+/* -------- HEADER NAV / PLAN SITE DEBUT -------- */
+
+.navFixTop {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.navFixTop a {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navWeb {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .navRespon {
     display: none;
+}
+
+.navItemRespon {
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+
+    .navWeb {
+        display: none;
+    }
+
+    .navRespon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navRespon span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .navItemRespon {
+        /* position: sticky;
+        top: 73px;
+        display: none;
+        width: 100%;
+        text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #21083be3;
+    }
+
+    .navFixTopRespon {
+        width: 100%;
+        position: sticky;
+        top: 73px;
+    }
+
+    .navItemRespon a {
+        width: 50%;
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #5a3481;
+        border-radius: 20px;
+        position: sticky;
+    }
+
+}
+
+/* -------- HEADER NAV / PLAN SITE FIN -------- */
+
+/* -------- HEADER IMG DEBUT -------- */
+
+.imgHeader {
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(
+        #21083B,
+        #A35FEB,
+        #4586FF,
+        #22D9EE,
+        #4586FF,
+        #A35FEB,
+        #21083B);
 }
 
 @media screen and (max-width: 660px) {
@@ -162,27 +225,9 @@ li {
         height: 200px;
     }
 
-    .navPlanSite {
-        display: none;
-    }
-
-    .navRespon {
-        display: flex;
-    }
-
 }
 
 @media screen and (max-width: 300px) {
-
-    .navContactHeader a {
-        padding: 10px;
-        font-size: 13px;
-    }
-
-    .navFixTop a {
-        padding: 20px;
-        font-size: 15px;
-    }
 
     .imgHeader img {
         width: 200px;
@@ -191,7 +236,7 @@ li {
 
 }
 
-/* ---------- Header FIN ---------- */
+/* -------- HEADER IMG FIN -------- */
 
 /* ---------- Main DEBUT ---------- */
 
