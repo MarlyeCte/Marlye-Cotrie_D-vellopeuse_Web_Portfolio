@@ -168,11 +168,8 @@ li {
     }
 
     .navItemRespon {
-        /* position: sticky;
-        top: 73px;
-        display: none;
-        width: 100%;
-        text-align: center; */
+        position: absolute;
+        visibility: visible;
         display: flex;
         flex-direction: column;
         align-items: center;
