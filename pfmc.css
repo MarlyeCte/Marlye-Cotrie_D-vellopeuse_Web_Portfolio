@@ -529,6 +529,7 @@ main {
 .btnCv {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .btnCv a {
